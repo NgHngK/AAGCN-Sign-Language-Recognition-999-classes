@@ -1,6 +1,6 @@
-# AAGCN-Sign-Language-Recognition-999-classes
+# AAGCN-Sign-Language-Recognition-1000-classes
 
-This is an updated version of the old AAGCN model for Sign Language Recognition. In this version, I trained the model on 999 classes. Yeah, there was a minor issue when capturing the videos so the dataset is lack of 1 label. Additionally, the dataset has some missing videos, which caused issues. To address this, I cleaned up and reorganized the code, splitting it into sub-files to make it more professional and easier to manage.
+This is an updated version of the old AAGCN model for Sign Language Recognition. In this version, I trained the model on 1000 classes. Yeah, there was a minor issue when capturing the videos so the dataset has some missing videos, which caused issues. To address this, I cleaned up and reorganized the code, splitting it into sub-files to make it more professional and easier to manage.
 
 I also added a solution for labels with too few videos: the code now duplicates existing videos from that label so that each class has enough data for training.
 
@@ -34,7 +34,7 @@ I started by splitting the videos into frames and extracting keypoints from thos
 About the model, based on the original Graph Convolution Networks (GCN) and the inspiration with Transformer, I combined GCN model with Attention Mechanism. This includes spatial (Identifies and highlights key joints in the skeleton graph), temporal (Highlights important time frames in the sequence), and channel attentions (Identifies important feature channels in terms of output from convolutional layers). 
 
 # Results
-We have just had the result on 100 classes, which is 94.3%. The performance of this model on 999 classes will be updated soon. 
+We have just had the result on 100 classes, which is 94.3%. The detailed performance of the model on 100 classes is shown in the article, named as "VSL paper (final).pdf" The performance of this model on 1000 classes will be updated soon. 
 
 # Conclusion
 For a better understand of my work, please read the article.
